@@ -1,0 +1,24 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test base64 0.13.0 --all-targets --all-features
+Features: test-name=rust-base64:@
+Depends: dh-cargo (>= 18), librust-criterion-0.3.2+default-dev, librust-rand-0.6+default-dev (>= 0.6.1-~~), librust-structopt-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test base64 0.13.0 --all-targets --no-default-features --features alloc
+Features: test-name=librust-base64-dev:alloc
+Depends: dh-cargo (>= 18), librust-criterion-0.3.2+default-dev, librust-rand-0.6+default-dev (>= 0.6.1-~~), librust-structopt-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test base64 0.13.0 --all-targets 
+Features: test-name=librust-base64-dev:default
+Depends: dh-cargo (>= 18), librust-criterion-0.3.2+default-dev, librust-rand-0.6+default-dev (>= 0.6.1-~~), librust-structopt-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test base64 0.13.0 --all-targets --no-default-features --features std
+Features: test-name=librust-base64-dev:std
+Depends: dh-cargo (>= 18), librust-criterion-0.3.2+default-dev, librust-rand-0.6+default-dev (>= 0.6.1-~~), librust-structopt-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test base64 0.13.0 --all-targets --no-default-features
+Features: test-name=librust-base64-dev:
+Depends: dh-cargo (>= 18), librust-criterion-0.3.2+default-dev, librust-rand-0.6+default-dev (>= 0.6.1-~~), librust-structopt-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
