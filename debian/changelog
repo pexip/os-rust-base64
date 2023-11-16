@@ -1,3 +1,9 @@
+rust-base64 (0.13.0-1pexip2) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 10:28:59 +0000
+
 rust-base64 (0.13.0-1pexip1) pexip; urgency=medium
 
   * Prepare Pexip packaging
